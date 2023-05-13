@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posting Pekerjaan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Posting Pekerjaan</h1>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="job_title">Judul Pekerjaan</label>
+          <input type="text" id="job_title" name="job_title" required />
+        </div>
+        <div class="form-group">
+          <label for="job_category">Kategori Pekerjaan</label>
+          <select id="job_category" name="job_category" required>
+            <option value="">Pilih Kategori</option>
+            <option value="IT">IT</option>
+            <option value="Akuntansi">Akuntansi</option>
+            <option value="Pemasaran">Pemasaran</option>
+            <option value="Pemasaran">Lainnya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="job_location">Lokasi Pekerjaan</label>
+          <input type="text" id="job_location" name="job_location" required />
+        </div>
+        <div class="form-group">
+          <label for="job_description">Deskripsi Pekerjaan</label>
+          <textarea
+            id="job_description"
+            name="job_description"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="job_requirement">Persyaratan Pekerjaan</label>
+          <textarea
+            id="job_requirement"
+            name="job_requirement"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn">Posting</button>
+      </form>
+    </div>
+  </body>
+</html>
